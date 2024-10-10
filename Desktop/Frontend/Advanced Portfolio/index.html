@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammed Arham</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "Opdc1j08s1phE0Rzq",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <section id="landing-page">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/arhamlogo.jpeg" alt="" />
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModel()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModel()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i
+              class="fa-solid fa-circle-half-stroke"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">Hey</h1>
+        <h1 class="title red">I'm Muhammed</h1>
+        <p class="header__para">
+          I'm a <b class="red"> Software Engineer</b> with a passion for building applications that prioritize user experience. I focus on writing clean, efficient code to create reliable and intuitive solutions that solve complex problems.
+          <br />
+          Here's a bit more <b class="red click" onclick="toggleModel()">about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/muhammed-arham-29b4692aa/" target="_blank" class="social__link click">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/arham2924" target="_blank" class="social__link click">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="./assets/Resume.pdf" target="_blank" class="social__link click">
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModel()">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="model">
+      <div class="model__half model__about">
+        <h3 class="model__title model__title--about">
+          Here's a bit about me
+        </h3>
+        <h4 class="model__sub-title model__sub-title--about">Software Engineer</h4>
+        <p class="model__para">
+          I'm a 20 year-old canadian
+          <b class="red"> software engineer</b> with a strong
+          passion for developping and working on websites with great
+          <b class="red">user experiences.</b>
+          <br />
+          I currently work on extremly difficult engineering problems and
+          learn from multiple different courses and programs and study the
+          most developed <b class="red">software programs</b> every day.
+        </p>
+        <div class="model__languages">
+          <figure class="model__language">
+            <img src="./assets/html5-brands-solid.svg" alt="" class="model__language--img">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="model__language">
+            <img src="./assets/css3-alt-brands-solid.svg" alt="" class="model__language--img">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="model__language">
+            <img src="./assets/js-brands-solid.svg" alt="" class="model__language--img">
+            <span class="language__name">JAVASCRIPT</span>
+          </figure>
+          </figure>
+          <figure class="model__language">
+            <img src="./assets/react-brands-solid.svg" alt="" class="model__language--img">
+            <span class="language__name">REACT</span>
+          </figure>
+          <figure class="model__language">
+            <img src="./assets/python-brands-solid.svg" alt="" class="model__language--img">
+            <span class="language__name">PYTHON</span>
+          </figure>
+          <figure class="model__language">
+            <img src="./assets/c-solid.svg" alt="" class="model__language--img">
+            <span class="language__name">C</span>
+          </figure>
+          <figure class="model__language">
+            <img src="./assets/java-brands-solid.svg" alt="" class="model__language--img">
+            <span class="language__name">JAVA</span>
+          </figure>
+          <figure class="model__language">
+            <img src="./assets/admin.png" alt="" class="model__language--img">
+            <span class="language__name">BASH</span>
+          </figure>
+        
+
+        </div>
+      </div>
+      <div class="model__half model__contact">
+        <i class="fas fa-times model__exit click" onclick="toggleModel()"></i>
+        <h3 class="model__title model__titile--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="model__sub-title model__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h3>
+        <form onsubmit="contact(event)" id="contact__form">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">E-mail</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Text</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">Send it my way</button>
+        </form>
+        <div class="model__overlay model__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="model__overlay model__overlay--success">
+          Thanks for the message! Looking forward to speaking with you soon.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="red">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Screenshot 2024-09-05 at 4.39.27 PM.png" class="project__img" alt="" />
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Ecommerce Project</h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  An e-commerce website for purchasing books, built with HTML, CSS, and JavaScript. The site features a user-friendly interface for browsing, searching, and buying books, with a responsive design for seamless use on different devices.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/arham2924/ecommerce" target="_blank" class="project__description--link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://libraryapp1-5e93b61a8963.herokuapp.com/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Screenshot 2024-09-05 at 4.43.15 PM.png" class="project__img" alt="" />
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">NFT Market Project</h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript, Node.js, React
+                </h4>
+                <p class="project__description--para">
+                  An NFT marketplace built with HTML, CSS, JavaScript, Node.js, and React. The platform allows users to view, buy, sell NFTs, and securely connect their wallets. Designed for seamless interaction, it provides a modern, responsive experience for engaging with digital assets.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/arham2924/Muhammed-Internship" target="_blank" class="project__description--link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://ultraverse1-820eed3e829c.herokuapp.com/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Screenshot 2024-09-05 at 4.48.53 PM.png" class="project__img" alt="" />
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Twitter clone</h3>
+                <h4 class="project__description--sub-title">
+                  Html, Tailwind CSS, JavaScript, Node.js, React
+                </h4>
+                <p class="project__description--para">
+                  A Twitter clone built with HTML, CSS, JavaScript, Tailwind CSS, React, and Node.js. This project replicates core Twitter functionalities, including posting tweets, viewing timelines, and interacting with user posts, all within a sleek, responsive design.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/arham2924/Twiiter-Clone" target="_blank" class="project__description--link">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+          
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <figure>
+          <img src="./assets/arhamlogo.jpeg" class="footer__logo--img" alt="" />
+        </figure>
+        <div class="footer__social--list">
+          <a href="https://github.com/arham2924" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+            Github
+          </a>
+          <a href="https://www.linkedin.com/in/muhammed-arham-29b4692aa/" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+            LinkedIn
+          </a>
+          <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white "
+            onclick="toggleModel()">
+            Contact
+          </a>
+          <a href="/assets/Resume.pdf" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright © 2024 Muhammed Arham</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
